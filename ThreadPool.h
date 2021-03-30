@@ -50,6 +50,7 @@ inline ThreadPool::ThreadPool(size_t threads):stop(false)
 
 						task = std::move(tasks.front());
 						this->tasks.pop();
+						//task();
 					}
 					task();
 				}
